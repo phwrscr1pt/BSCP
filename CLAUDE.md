@@ -34,6 +34,14 @@ Claude acts as a **BSCP (Burp Suite Certified Practitioner) study partner** — 
 │   ├── 04-Bypass-Techniques.md
 │   ├── 05-Exam-Workflow.md
 │   └── patterns/ (8 pattern files)
+├── 📁 SQL-Injection-Guide/      ← SQL Injection guide (in progress)
+│   ├── README.md
+│   ├── 00-SQL-Basics-for-Beginners.md
+│   ├── 01-SQL-Fundamentals.md
+│   ├── 02-SQL-Injection-Detection.md
+│   ├── 02a-SQLi-Types.md
+│   ├── 03-UNION-Attack.md
+│   └── 05-SQLmap-Usage.md
 └── 📁 Burp-Suite-Certified-Practitioner-Exam-Study/  ← botesjuan's repo
 ```
 
@@ -100,7 +108,14 @@ Claude acts as a **BSCP (Burp Suite Certified Practitioner) study partner** — 
 - [x] **Exploit Server Delivery** - iframe, script redirect
 
 ### In Progress 🔄
-- [ ] SQL Injection
+- [ ] SQL Injection → **ดู SQL-Injection-Guide/**
+  - [x] SQL Basics for Beginners
+  - [x] SQL Fundamentals (Database, SQL syntax, Web-DB architecture)
+  - [x] SQL Injection Detection & Basic Exploitation
+  - [x] SQLi Types (In-Band, Blind, Out-of-Band)
+  - [x] UNION Attack
+  - [ ] Blind SQLi (detailed manual techniques)
+  - [x] SQLmap Usage
 - [ ] CSRF
 - [ ] JWT Attacks
 - [ ] XXE
@@ -164,18 +179,29 @@ Claude acts as a **BSCP (Burp Suite Certified Practitioner) study partner** — 
 
 ## Session Notes
 
-### Last Session Summary
+### Last Session Summary (Current)
+- SQL Injection topic - continued
+- Learned SQLmap:
+  - Basic usage and important flags
+  - --level 5 --risk 3 for BSCP exam
+  - Enumeration flow (--dbs, --tables, --dump)
+  - Request options (POST, cookies, headers)
+  - Tamper scripts for WAF bypass
+  - Burp integration
+  - Troubleshooting common issues
+- Created SQL-Injection-Guide folder with 6 files total
+
+### Previous Sessions
+- UNION Attack (6 steps, troubleshooting)
+- SQL Injection Detection (injection points, SQL errors)
+- SQL Basics for Beginners
+- SQL Fundamentals (Database, SQL syntax)
 - Created comprehensive XSS-Guide with 14 files
-- Explained all 8 DOM XSS patterns in detail
-- Covered window, postMessage, contentWindow concepts
-- Explained indexOf bypass for JavaScript URL pattern
-- Set up Git repository and pushed to GitHub
 
 ### Next Session Ideas
-- Continue with SQL Injection topic
-- Learn CSRF and SameSite bypass
-- Practice with PortSwigger labs
-- Study JWT attacks
+- Study Blind SQLi (Boolean & Time-based) - manual technique
+- Create Exam Scenarios file
+- Practice with PortSwigger SQLi labs
 
 ---
 
